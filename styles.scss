@@ -6,37 +6,87 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: white;
 }
 
 .container {
 
+    .displayWrapper {
+        background: linear-gradient(100deg, #f66b6b 10%, #5b71bf 100%);
 
-    display: grid;
-    place-items: center;
+        .display {
+            margin: 0 auto;
+            max-width: 50%;
 
-    .display {
-        background: linear-gradient(90deg, #f66b6b 35%, #5b71bf 100%);
-        width: 100%;
-        min-height: 40vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+            width: 100%;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
 
+            color: white;
 
-        .title {
-            font-size: 5vw;
-            text-align: center;
-            font-weight: 600;
+            .title {
+                margin: 12vh 0 0 0;
+                font-size: 4vw;
+                font-weight: 800;
+            }
+
+            .inputWrapper {
+                .textInput {
+                    margin: 3vh 0 0 5vw;
+                    width: 25vw;
+                    min-height: 4.5vh;
+                    background-color: transparent;
+                    border: white 4px solid;
+                    border-radius: 10px;
+                    padding: 0 0 0 0.5vw;
+                    font-size: 1rem;
+                }
+
+                .textInput::placeholder {
+                    color: white;
+                }
+
+                .textInput:focus {
+                    outline: 0;
+                }
+
+                .addButton {
+                    margin: 0 0 0 0.2vw;
+                    min-height: 4.5vh;
+                    width: 7vw;
+                    background-color: transparent;
+                    border: white 4px solid;
+                    border-radius: 10px;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 1rem;
+                }
+            }
         }
-
     }
 
-    .text {
-        background-color: white;
+    .listWrapper {
+        margin: 0 auto;
+        max-width: 50%;
+
         width: 100%;
+        min-height: 50vh;
+
+        .list {
+            margin: 5vh 0 0 0;
+            max-width: 50%;
+
+            align-items: center;
+
+            background-color: white;
+            width: 100%;
+            color: #4C4C4C;
+            font-size: 2rem;
+            font-weight: 600;
+
+        }
     }
+
 
 
 }

@@ -10,14 +10,23 @@
 <body>
     
     <div class="container">
-        <div class="display">
-            <h1 class="title" id="title-id">sarasa</h1>
-            <p class="description" id="description">descripcion</p>
+        <div class="displayWrapper">
+            <div class="display">
+                <h1 class="title" id="title-id"></h1>
+                <div class="inputWrapper">
+                    <input type="text" name="tarea" class="textInput" id="input" placeholder="Escribí una tarea...">
+                    <button class="addButton" id="button">Agregar</button>
+                </div>
+    
+            </div>
         </div>
 
-        <div class="text">
-
+        <div class="listWrapper">
+            <div class="list">
+                <p class="tareas">Tareas pendientes:</p>
+            </div>
         </div>
+
 
         
     </div>
